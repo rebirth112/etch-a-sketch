@@ -57,9 +57,19 @@ let resetButton = document.querySelector(".button1");
 resetButton.addEventListener('click', resetFunction);
 
 function resetFunction () {
-    const allCells = document.querySelectorAll('.cell');
+    var allCells = document.querySelectorAll('.cell');
     allCells.forEach(cellColor => {
                 cellColor.classList.remove('selected')
             }
         );
     };
+
+const rootEl = document.querySelector(':root');
+
+let colorButton = document.querySelector(".button2");
+colorButton.addEventListener('click', colorSwitch);
+
+function colorSwitch () {
+    newValue = document.getElementById("cellcolor").value;
+    rootEl.style.setProperty(`--cell-bg-color`, `${newValue}`);
+}

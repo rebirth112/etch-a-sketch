@@ -33,8 +33,11 @@ h2 {
     margin: auto;
   }
 
-.cell.selected {
-    background-color:rgb(160, 82 ,45);
+:root {
+    --cell-bg-color: rgb(160, 82 ,45)
+}
+  .cell.selected {
+    background-color: var(--cell-bg-color)
 }
 
 
@@ -88,7 +91,7 @@ cursor: pointer;
 .bottom-buttons {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 .button1, .button2 {
@@ -114,3 +117,16 @@ cursor: pointer;
     border-color: rgb(65, 43, 21);
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    color: rgb(160, 82 ,45);
+    font-family: 'Garamond', 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', 'serif';
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+#cellcolor {
+    width: 90px;
+    height: 40px;
+}
