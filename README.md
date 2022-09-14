@@ -1,2 +1,2 @@
 # etch-a-sketch
-Odin Project from Foundations
+Set the grid size and color, and draw your own pictures!
